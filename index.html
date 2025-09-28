@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lamg="ja">
+  
+<head>
+  <meta charset="UTF-8">
+  <title>タブやモーダルを使ったショッピングサイト</title>
+  <meta name="description" content="シンプルなUIで作った練習用ショッピングサイトです。商品一覧やカート機能を体験できます。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+     <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  </head>
+  <body>
+    
+    <header id="header" class="wrapper">
+  <div class="header-left">
+    <h1 class="logo"><i>Sweet Shop</i></h1>
+  </div>
+
+  <nav class="header-center">
+    <ul class="menu-group">
+      <li class="menu-item-center"><a href="#header">ホーム</a></li>
+      <li class="menu-item-center"><a href="https://cdpn.io/pen/debug/raxOWOE?authentication_hash=mWMoNZnvdNek">ショップ</a></li>
+      <li class="menu-item-center"><a href="#news">お知らせ</a></li>
+      <li class="menu-item-center"><a href="#page-footer">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-right">
+    <!-- 検索バー -->
+    <div class="search-box">
+    <input type="text" placeholder="KeyWord" class="search-bar">
+      <button type="submit" class="search-btn">
+    <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="検索">
+  </button>
+</div>
+    <!-- ログインアイコン -->
+    <a href="/login" class="icon">
+      <img src="https://www.takashimaya.co.jp/sto/common/image/icn_user-b.png" alt="Login">
+      <span>ログイン</span>
+    </a>
+    <!-- カートアイコン -->
+    <a href="/cart" class="icon">
+      <img src="https://www.takashimaya.co.jp/sto/common/image/icn_cart-b.png" alt="Cart">
+      <span>カート</span>
+    </a>
+    <!-- ハンバーガーメニュー -->
+    <button class="hamburger-menu">
+      <div class="icon">
+      <img src="https://www.takashimaya.co.jp/sto/common/image/icn_menu-b.png" alt="menu">
+      <span>メニュー</span>
+        </div>
+    </button>
+  </div>
+</header>
+    
+    
+    <div class="mainvisual">
+      <img src="https://user0514.cdnw.net/shared/img/thumb/Photoelly010_TP_V.jpg" alt="mainvisual">
+      <h1 class="main-title">ちいさな幸せを<br>あなたに届けます</h1>
+    </div>
+    <h2 class="sub-title">人気のいちおしスイーツ<h2>
+      <div class="main-item">
+       <div class="main-item-wrapper">
+        <div class="main-item-list">
+          <a href="https://cdpn.io/pen/debug/raxOWOE?authentication_hash=jVkpoDXgLZLA"><img src="https://i-storage.tenki.jp/large/storage/static-images/suppl/article/image/2/28/288/28895/1/large.jpg" alt="sweet"></a>
+          <p>ドイツ風バームクーヘン</p>
+        </div>
+        <div class="main-item-list">
+          <a href="https://cdpn.io/pen/debug/raxOWOE?authentication_hash=jVkpoDXgLZLA"><img src="https://graphon.jp/img/photo/34969.JPG" alt="sweet"></a>
+          <p>ハワイアンパンケーキ</p>
+        </div>
+        <div class="main-item-list">
+          <a href="https://cdpn.io/pen/debug/raxOWOE?authentication_hash=jVkpoDXgLZLA"><img src="https://user0514.cdnw.net/shared/img/thumb/elly21515B1848_TP_V.jpg" alt="sweet"></a>
+          <p>トリコロールマカロン</p>
+        </div>
+       </div>
+      </div>
+   <section id="news">
+     <h2 class="news-title">お知らせ</h2>
+     <ul class="news-list">
+    <li class="news-item">
+      <span class="news-date">20XX-09-24</span>
+      <span class="news-text">季節限定スイーツ「秋のマロンケーキ」販売開始！</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">20XX-08-18</span>
+      <span class="news-text">会員限定ポイント2倍キャンペーン実施中！</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">20XX-07-10</span>
+      <span class="news-text">新商品チョコレートセット入荷しました。</span>
+    </li>
+  </ul>
+</section>
+      
+   <footer id="page-footer">
+     <div class="footer-wrapper">
+     <div class="footer-support">
+     <h3 class="footer-text">ご注文・お問い合わせ</h3>
+     <p class="text-eng">CUSTOMER SUPPORT</p>
+     <h3 class="footer-contact">☏ TEL: 03-1234-5678</h3>
+     <p class="contact-text">（受付時間: 平日 10:00〜18:00）</p>
+       </div>
+     
+    <div class="footer-company">
+     <h3 class="company">会社情報</h3>
+     <div class="company-text">
+  <p>会社名：Sweet Shop 株式会社</p>
+  <p>所在地：〒000-0000 東京都中央区サンプル1-2-3</p>
+  <p>代表者：山田 太郎</p>
+  <p>メール：info@sweetshop.co.jp</p>
+     </div>
+   </div>   
+  </div>
+     <div class="copyright">
+       <small>&copy; 2025 Sweet Shop</small>
+     </div>
+     </footer>
+     
+      
+      
+      
+    </body>
+      </html>
