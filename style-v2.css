@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+/* ヘッダー全体を横並び */
+#header {
+  display: flex;
+  justify-content: space-between; /* 左・中央・右を均等に配置 */
+  align-items: center; /* 縦方向を中央揃え */
+  padding: 0 20px;
+  height: 80px;
+  background-color: #fff; /* 背景色（お好みで） */
+  border-bottom: 1px solid #ddd;
+}
+
+/* 左（ロゴ） */
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: serif;
+}
+
+/* 中央メニュー */
+.header-center {
+  flex: 1; /* 中央を広げる */
+}
+.menu-group {
+  display: flex;
+  justify-content: center; /* メニューを中央に配置 */
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-item-center a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+}
+
+/* 右（検索・アイコン） */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.search-bar {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   text-decoration: none;       /* 下線を消す */
+  margin: 0 10px;              /* 横の間隔 */
+}
+.icon img {
+  width: 40px;
+  height: 40px;
+}
+.icon span {
+  font-size: 13px
+}
+.hamburger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.hamburger-menu img {
+  width: 40px;
+  height: 40px;
+}
+.search-box {
+  display: flex;              /* 子要素を横並びにする */
+  align-items: center;        /* 縦方向の中央揃え */
+}
+
+.search-bar {
+  padding: 5px 10px;          /* 内側に余白をつける */
+  border: 1px solid #ccc;     /* 薄いグレーの枠線をつける */
+  border-radius: 20px 0 0 20px; /* 左側だけ角丸にする（右はフラット） */
+  outline: none;              /* フォーカス時の枠線を消す */
+}
+
+.search-btn {
+  background: #fcb69f;        /* ボタンの背景色を設定（薄いオレンジ系） */
+  border: 1px solid #ccc;     /* ボタンの枠線をつける */
+  border-left: none;          /* 左側の枠線を消して input とつなげる */
+  padding: 5px 10px;          /* ボタン内の余白 */
+  cursor: pointer;            /* カーソルを指マークにする */
+  border-radius: 0 20px 20px 0; /* 右側だけ角丸にする（左はフラット） */
+}
+
+.search-btn img {
+  width: 16px;                /* アイコンの横幅 */
+  height: 16px;               /* アイコンの高さ */
+}
+.mainvisual {
+  position: relative;       /* 画像の上に文字を重ねるため */
+  display: block;           /* ← inline-block を block に変更 */
+  width: 100%;              /* 横幅いっぱい */
+  margin: 0 auto 100px;     /* 余白は下だけ残す */
+  overflow: hidden;         /* 念のため画像のはみ出し防止 */
+}
+
+.mainvisual img {
+  width: 100%;              /* 横幅いっぱい */
+  height: auto;             /* 縦横比維持 */
+  display: block;           /* ← インライン画像による隙間を防ぐ */
+  object-fit: cover;  /* はみ出しても中央を維持 */
+}
+
+.main-title {
+  position: absolute;       /* 画像の上に配置 */
+  top: 50%;                 /* 縦の中央に */
+  left: 50%;                /* 横の中央に */
+  transform: translate(-50%, -50%); /* 真ん中にぴったり合わせる */
+  font-size: 50px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family:serif;
+}
+.sub-title {
+  margin: 80px;
+  text-align: center;
+  font-size: 30px;
+  font-family: serif;
+}
+
+.main-item {
+  
+ 
+}
+.main-item-wrapper {
+  display: flex;              /* 横並びにする */
+  justify-content: center;    /* 中央揃え */
+  gap: 50px;                  /* 画像同士の間隔 */
+  margin-top: 30px;           /* 上の余白 */
+}
+.main-item-list {
+  display: flex;
+  flex-direction: column;     /* 縦並びに（画像→テキスト） */
+  align-items: center;        /* テキストを中央寄せ */
+  text-align: center;         /* テキストも中央揃え */
+  background:white; 
+border-radius:8px; 
+box-shadow:0 6px 18px rgba(0,0,0,0.08); 
+padding:12px; 
+transition:transform .14s ease, box-shadow .14s ease; 
+  cursor:pointer;
+text-align:center; 
+}
+.main-item-list img {
+   width: 350px;       /* 幅を指定 */
+  height: auto;               /* 縦横比を保つ */
+  border-radius: 10px;        /* 角を少し丸く */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* ふんわり影 */
+
+}
+.main-item-list:hover  { 
+transform: translateY(-6px); 
+box-shadow:0 10px 22px rgba(0,0,0,0.12); 
+}
+.main-item-list p {
+  margin-top: 10px;           /* 画像と文字の間隔 */
+  font-size: 16px;
+  color: #333;
+}
+#news {
+  max-width: 800px;       /* 横幅制限 */
+  margin: 100px auto;      /* 上下余白50px、中央
+  寄せ */
+  bottom: 50px;
+  padding: 20px;
+  background-color: #fff4e6;  /* 薄いオレンジ系背景 */
+  border-radius: 15px;    /* 角丸 */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 軽い影 */
+}
+
+/* セクションタイトル */
+.news-title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #d2691e; /* オレンジ系 */
+}
+
+/* お知らせリスト */
+.news-list {
+  list-style: none;       /* デフォルトの黒丸削除 */
+  padding-left: 0;
+}
+
+/* 各ニュース項目 */
+.news-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 15px;              /* 日付とテキストの間隔 */
+}
+
+/* 日付 */
+.news-date {
+  font-size: 14px;
+  color: #888888;
+  flex-shrink: 0;         /* 日付の幅を固定 */
+}
+
+/* お知らせテキスト */
+.news-text {
+  font-size: 16px;
+  color: #333333;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between; /* 両端に均等配置 */
+  align-items: flex-start;     /* 上揃えにする */
+  padding: 20px;
+  
+}
+.footer-support {
+  text-align: center;
+  border-right: 2px solid #ccc; /* 右に縦線 */
+  padding-right: 30px;          /* 線と文字がくっつかないように余白 */
+}
+.text-eng {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.footer-support, .footer-company {
+  width: 50%; /* それぞれの幅を調整 */
+  margin-left: 70px;
+}
+.footer-company {
+  padding-left: 70px;
+}
+.company {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.company-text p {
+  font-size: 15px;
+}
+.copyright {
+  background-color: rgb(119, 53, 52);
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  margin-top: 70px;
+  font-size: 17px;
+  font-family:serif;
+}
